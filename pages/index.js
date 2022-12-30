@@ -2,12 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import RegistroModal from '../components/RegistroModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
    <div className='bg-gray-100 flex flex-row  space-x-10  justify-center h-screen'>
+      <RegistroModal />
       <div className='my-auto flex flex-col justify-center '>
         <div className='flex justify-center'>
         <img className=' w-32 h-32' src='https://cdn-icons-png.flaticon.com/512/2510/2510074.png' />
@@ -22,7 +24,7 @@ export default function Home() {
         </div>
        
     </div>
-    <div className=' border border-slate-200/75 w-[25%] p-2 bg-white my-auto flex flex-row  rounded-lg shadow-xl'>
+    <div className=' border border-slate-200 w-[25%] p-2 bg-white my-auto flex flex-row  rounded-lg shadow-xl'>
             <form className='w-full'>
 
               <input className='focus:outline-none focus:border-blue-500 focus:border rounded-lg focus:shadow-sm focus:shadow-blue-500/50  w-11/12 placeholder:min-w-full m-2 p-2' placeholder='Correo electronico o numero de teléfono' />
